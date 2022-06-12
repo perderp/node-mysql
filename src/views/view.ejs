@@ -1,0 +1,15 @@
+<ul>
+    <% data.forEach( (user) => { %>
+        <li>
+            <p>
+                <%=user.id %>
+                <%=user.first_name %>
+                <%=user.last_name %>
+                <a href="/deleteData/<%=user.id %>">Delete</a>
+                <a href="/updateData/<%=user.id %>">Update</a>
+            </p>
+        </li>
+    <% }) %>
+</ul>
+
+<a href="/">Go Back</a>
